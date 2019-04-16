@@ -23,6 +23,7 @@ body{
   text-align: center;
   margin: auto;
   width: 50%;
+  min-width: 420px;
 }
 
 #header span{
@@ -37,6 +38,7 @@ body{
   text-align: center;
   border-radius: 1em;
   width: 70%;
+  min-width: 590px;
 }
 
 .wedding_pics{
@@ -61,6 +63,7 @@ body{
   margin: auto;
   padding: 0;
   width: 75%;
+  min-width: 520px;
   text-align: center;
   border-radius: 2em;
 }
@@ -113,7 +116,12 @@ body{
 
 #content{
   background-color: none;
+  min-width: 620px;
   /*height: 230px;*/
+}
+
+#content .justified{
+  text-align: justify;
 }
 
 #leftBody{
@@ -151,5 +159,5 @@ body{
 }
 
 .spacedList li{
-  margin: 1em 0 1em 0;
+  margin: .5em 0 .5em 0;
 }
