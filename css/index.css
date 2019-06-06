@@ -31,45 +31,9 @@ body{
   border-radius: .3em;
 }
 
-#wedding_pictures{
-  background: rgba(214, 132, 32, .2);
-  /*background: rgba(53, 1, 20, 0.1); */
-  margin: auto;
-  text-align: center;
-  border-radius: 1em;
-  width: 70%;
-  min-width: 590px;
-}
-
-.wedding_pics{
-  display: inline-block;
-  margin: .5em .2em .5em .2em;
-  width: 30%;
-  height: relative;
-  border: .3em solid rgba(53, 1, 20, 0.3);
-  border-radius: 2em;
-}
-
-/* not in use
-.dropButton{
-  list-style-type: none;
-  float: none;
-  padding: .1em 2em .1em 2em;
-  font-size: 1.25em;
-} */
-
-#bar{
-  background-color: rgba(214, 132, 32, .2);
-  margin: auto;
-  padding: 0;
-  width: 75%;
-  min-width: 520px;
-  text-align: center;
-  border-radius: 2em;
-}
 
 
-.dropButton {
+.dropItem {
   background-color: rgba(214, 132, 32, .3);
   color: white;
   padding: 1em;
@@ -78,17 +42,19 @@ body{
   border-radius: 1em;
 }
 
-.dropdown {
+.dropdown-content {
   position: relative;
   display: inline-block;
-  padding: 1.25em;
+  padding: .5em;
+  border: none;
+  border-radius: 1em;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background: rgba(114, 105, 95, 1);
-  min-width: 160px;
+  /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -96,7 +62,7 @@ body{
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  /* padding: 12px 16px; */
   text-decoration: none;
   display: block;
 }
@@ -106,22 +72,12 @@ body{
   background: rgb(101, 93, 84);
 }
 
-.dropdown:hover .dropdown-content {
+.dropItem:hover .dropdown-content {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
+.dropItem:hover {
   background-color: rgba(75, 66, 55, 1);
-}
-
-#content{
-  background-color: none;
-  min-width: 620px;
-  /*height: 230px;*/
-}
-
-#content .justified{
-  text-align: justify;
 }
 
 #leftBody{
@@ -132,32 +88,11 @@ body{
   height: 100%;
 }
 
-#leftBody ul{
-  list-style-type: none;
-  padding-right: 5%;
-}
-
-#centerBody{
-  width: 1%;
-  float: left;
-  background-color: black;
-  height: 100%;
-}
-
-#rightBody{
-  width: 59%;
-  float: right;
-  background-color: rgb(112, 124, 125);
-  color: rgba(183, 209, 218, 1);
-  height: 100%;
-}
-
-#rightBody ul{
-  list-style-type: none;
-  padding-right: 5%;
-  padding-left: 5%;
+ul{
+  list-style: none;
+  /* padding-right: 5%; */
 }
 
 .spacedList li{
-  margin: .5em 0 .5em 0;
+  margin: 1em 0 1em 0;
 }
